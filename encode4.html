@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <script src="elm.js"></script>
+  <script>
+    var popup;// = window.open('./index.html', 'mywindow1', 'width=480, height=960');
+  </script>
+</head>
+
+<body>
+  <div id="myapp"></div>
+  <script>
+  var app = Elm.Encoder4.init({
+    node: document.getElementById('myapp')
+  });
+  app.ports.sendMes.subscribe(function(str) {
+	  if (str == "Open") popup = window.open('./index.html', 'mywindow1', 'width=480, height=960');
+	  else{
+		try{
+			popup.postMessage(str, '*');
+		}
+		catch {alert ("Please open window.") };
+	  }
+  });
+  </script>
+</body>
+</html>
