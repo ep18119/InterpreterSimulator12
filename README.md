@@ -2,6 +2,8 @@
 インタプリタシミュレータの習作(過程)<br>
 バージョン12<br>
 
+![image](https://user-images.githubusercontent.com/76155138/121128442-5dbfc380-c866-11eb-9869-f3536fae4514.png)
+
 ### encode4.html
 ブロックエディタ<br>
 エンコーダ導入からバージョン4<br>
